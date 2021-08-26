@@ -1,1 +1,10 @@
+# Intellij
 .idea
+### Gradle ###
+.gradle
+/build/
+### Java ###
+*.class
+# Package Files #
+*.war
+*.ear

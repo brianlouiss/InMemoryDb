@@ -1,14 +1,14 @@
 package data;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class InMemoryDataStore implements DataStore {
     private static InMemoryDataStore dataStore;
     private Map<String, Integer> data;
 
     private InMemoryDataStore() {
-        data = new HashMap<>();
+        data = new ConcurrentHashMap<>();
     }
 
     public static InMemoryDataStore getInstance()
